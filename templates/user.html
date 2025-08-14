@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Guia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de guias FuSEx</h1>
+        <form>
+            <div id="dados_pacientes">
+
+            <label>Nome Completo</label>
+            <input type="text" name="Nome completo", placeholder="Ex: João da Silva" required>
+
+            <label>Idade</label>
+            <input type="number" name="Idade", placeholder="Informe sua idade" required>
+                    
+            <label>Número do Cartão FuSEx ou Prec-CP</label>
+            <input type="number" name="prec-cp" placeholder="Ex: 12345678900  (Prec CP)" required>
+            
+            </div>
+
+            <div id="Contato">
+
+            <label>E-mail para envio da guia</label>
+            <input type="email" name="email", placeholder="exemplo@email.com" required>
+
+            <label>Telefone com DDD</label>
+            <input type="tel" name="Telefone", placeholder="(62) 91234-5678" required>
+            
+            </div>
+
+            <div id="Informacoes">
+            <label>Local desejado para atendimento</label>
+            <input type="text" name="local", placeholder="ex: hospital X, clínica Y" required>
+            
+            <label>Especialidade ou área solicitada</label>
+            <input type="text" name="especialidade", placeholder="Ortopedia, Cardiologia, Fisioterapia..." required>
+
+            </div>
+
+            <div id="lgpd">
+            <label class="lgpd">
+                <input type="checkbox" name="lgpd" required> Aceito os termos da LGPD
+            </label>
+            </div>
+
+            <button type="submit">Enviar Solicitação</button>
+        </form>
+    </div>
+</body>
+</html>

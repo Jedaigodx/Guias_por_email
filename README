@@ -1,0 +1,25 @@
+meu_projeto/
+│
+├── app.py                  # Ponto de entrada da aplicação Flask
+├── requirements.txt        # Dependências do projeto
+├── config.py               # Configurações gerais
+│
+├── static/                 # Arquivos estáticos (CSS, JS, imagens)
+│   ├── css/
+│   ├── js/
+│   └── uploads/            # Upload local (se não usar armazenamento externo)
+│
+├── templates/              # HTML (usando Jinja2)
+│   ├── user/               # Páginas para o usuário
+│   └── admin/              # Páginas para o administrador
+│
+├── routes/                 # Rotas separadas
+│   ├── user_routes.py
+│   └── admin_routes.py
+│
+├── models/                 # Modelos de banco de dados
+│   ├── pedido.py
+│   └── usuario_admin.py
+│
+└── database.py             # Conexão com o banco de dados
+
