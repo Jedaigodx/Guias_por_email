@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitação de Guia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Solicitação de Guia</title>
+  <link rel="stylesheet" href="static/style_form.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Agendamento de guias FuSEx</h1>
-        <form>
-            <div id="dados_pacientes">
+  <div class="container">
+    <h1>Agendamento de Guias FuSEx</h1>
+    <form>
+      <fieldset>
+        <legend>Dados do Paciente</legend>
+        <div class="flex-row">
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="João da Silva" required>
+          </div>
+          <div>
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder="Informe sua idade" required>
+          </div>
+        </div>
+        <label for="prec-cp">Cartão FuSEx ou Prec-CP</label>
+        <input type="text" id="prec-cp" name="prec-cp" placeholder="12345678900" required>
+      </fieldset>
 
-            <label>Nome Completo</label>
-            <input type="text" name="Nome completo", placeholder="Ex: João da Silva" required>
+      <fieldset>
+        <legend>Contato</legend>
+        <label for="email">E-mail para envio da guia</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
 
-            <label>Idade</label>
-            <input type="number" name="Idade", placeholder="Informe sua idade" required>
-                    
-            <label>Número do Cartão FuSEx ou Prec-CP</label>
-            <input type="number" name="prec-cp" placeholder="Ex: 12345678900  (Prec CP)" required>
-            
-            </div>
+        <label for="telefone">Telefone com DDD</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(62) 91234-5678" required>
+      </fieldset>
 
-            <div id="Contato">
+      <fieldset>
+        <legend>Informações do Atendimento</legend>
+        <label for="local">Local desejado para atendimento</label>
+        <input type="text" id="local" name="local" placeholder="Hospital X, Clínica Y" required>
 
-            <label>E-mail para envio da guia</label>
-            <input type="email" name="email", placeholder="exemplo@email.com" required>
+        <label for="especialidade">Especialidade ou área solicitada</label>
+        <input type="text" id="especialidade" name="especialidade" placeholder="Ortopedia, Cardiologia..." required>
+      </fieldset>
 
-            <label>Telefone com DDD</label>
-            <input type="tel" name="Telefone", placeholder="(62) 91234-5678" required>
-            
-            </div>
+      <div class="lgpd">
+        <label>
+          <input type="checkbox" name="lgpd" required>
+          🔒Declaro que li e estou de acordo com o uso dos meus dados pessoais e sensíveis para os fins mencionados, conforme a Política de Privacidade e a LGPD.
+        </label>
+      </div>
 
-            <div id="Informacoes">
-            <label>Local desejado para atendimento</label>
-            <input type="text" name="local", placeholder="ex: hospital X, clínica Y" required>
-            
-            <label>Especialidade ou área solicitada</label>
-            <input type="text" name="especialidade", placeholder="Ortopedia, Cardiologia, Fisioterapia..." required>
-
-            </div>
-
-            <div id="lgpd">
-            <label class="lgpd">
-                <input type="checkbox" name="lgpd" required> Aceito os termos da LGPD
-            </label>
-            </div>
-
-            <button type="submit">Enviar Solicitação</button>
-        </form>
-    </div>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 meu_projeto/
 │
-├── app.py                  # Ponto de entrada da aplicação Flask
+├── main.py                  # Ponto de entrada da aplicação Flask
 ├── requirements.txt        # Dependências do projeto
 ├── config.py               # Configurações gerais
 │
