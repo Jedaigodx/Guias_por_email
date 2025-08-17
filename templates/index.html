@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Solicitação de Guia Médica</title>
+    <link rel="stylesheet" href="/static/style_homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Sistema de Solicitação de Guias de Encaminhamento FuSEx</h1>
+            <p>Bem-vindo! Este sistema é destinado ao agendamento de guias do FuSEx nos seguintes períodos: <b>Segunda-feira a Quinta-feira (07:30h as 15:00h).</b></p>
+            <a href="{{ url_for('form')}}" class="main-btn">
+                Solicitar Guia
+                <i>→</i>
+            </a>
+        </div>
+    </header>
+    
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/49625a02-433d-41f9-89c9-dc157a534b7d.png" alt="Ícone de formulário com símbolo de caneta preenchendo documentação">
+                    </div>
+                    <h3>Preencha o formulário</h3>
+                    <p>Preencha as informações necessárias para a confecção da Guia de Encaminhamento.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f50149ed-f528-4593-a64f-a17aaa98323c.png" alt="Ícone de relógio indicando tempo de espera para análise">
+                    </div>
+                    <h3>Aguarde análise</h3>
+                    <p>Nossa equipe de emissão de guias irá avaliar sua solicitação em até 10 dias úteis.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ab07dbaa-d2ad-4658-a7a5-13c4101a1df2.png" alt="Ícone de envelope com símbolo de email sendo enviado">
+                    </div>
+                    <h3>Receba sua guia</h3>
+                    <p>Entraremos em contato por e-mail informando a disponibilidade para retirada da guia de encaminhamento, que deverá ser feita presencialmente mediante apresentação do pedido físico original.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Cb Pacífico | © 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
