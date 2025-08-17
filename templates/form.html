@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento Guia FuSEx</title>
+</head>
+<body>
+  <h1>📄 Agendamento de Guia FuSEx</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <label>Nome completo:</label><br>
+    <input type="text" name="nome" required><br>
+
+    <label>Data de nascimento:</label><br>
+    <input type="date" name="nascimento" required><br>
+
+    <label>Número do Cartão FuSEx:</label><br>
+    <input type="text" name="fusex" required><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Telefone:</label><br>
+    <input type="text" name="telefone"><br>
+
+    <label>Local desejado para atendimento:</label><br>
+    <input type="text" name="local" required><br>
+
+    <label>Especialidade médica:</label><br>
+    <input type="text" name="especialidade" required><br>
+
+    <label>Encaminhamento médico (JPG, PNG ou PDF):</label><br>
+    <input type="file" name="arquivo" required><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+flask
+cloudinary
+gspread
+oauth2client
