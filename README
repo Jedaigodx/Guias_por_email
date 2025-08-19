@@ -9,6 +9,7 @@ meu_projeto/
 │   ├── style_homepage/CSS
 │   ├── imagens           
 │   └── js/
+│ 
 ├── templates/              # HTML (nativo)
 │   ├── Index/              # Página de entrada
 │   ├── form/               # Páginas para o usuário
@@ -22,5 +23,5 @@ meu_projeto/
 │   ├── pedido.py
 │   └── usuario_admin.py
 │
-└── database.py             # Conexão com o banco de dados
+└── database.py             # Conexão com o banco de dados (Supabase 500Mb)
 

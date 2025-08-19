@@ -10,4 +10,8 @@ def index():
 def form():
     return render_template("form.html")
 
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
 app.run(debug=True)

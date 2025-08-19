@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Painel Gerencial - Guias por E-mail</title>
+</head>
+<body>
+    <div class="admin-panel">
+        <header>
+            <h1>Painel Gerencial – Guias por E-mail</h1>
+            <button class="toggle-button" id="toggleButton">Trancar Novos Preenchimentos</button>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><i class="fas fa-chart-line"></i> <a href="#">Dashboard</a></li>
+                <li><i class="fas fa-folder"></i> <a href="#">Gerenciar Guias</a></li>
+                <li><i class="fas fa-users"></i> <a href="#">Usuários</a></li>
+                <li><i class="fas fa-cog"></i> <a href="#">Configurações</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Resumo de Solicitações Enviadas</h2>
+            <!-- Conteúdo do painel -->
+        </main>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Guia – Protocolo #12345</h2>
+            <p>Nome do Paciente: João da Silva</p>
+            <p>Idade: 30</p>
+            <p>CPF: 123.456.789-00</p>
+            <p>Especialidade: Cardiologia</p>
+            <p>Médico Solicitante: Dr. Carlos</p>
+            <p>Anexos: <a href="#">Arquivo.pdf</a></p>
+            <button>Marcar como Enviado para SIRE</button>
+            <button>Enviar por E-mail</button>
+            <button>Enviar por WhatsApp</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const closeModal = document.getElementById("closeModal");
+        const toggleButton = document.getElementById("toggleButton");
+
+        toggleButton.addEventListener("click", function() {
+            this.classList.toggle("active");
+            this.textContent = this.classList.contains("active") ? "Novos Preenchimentos Trancados" : "Trancar Novos Preenchimentos";
+        });
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Simulação de abrir o modal
+        document.querySelector('.sidebar li:nth-child(2) a').addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        });
+    </script>
+</body>
+</html>
