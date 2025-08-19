@@ -7,6 +7,7 @@ meu_projeto/
 ├── static/                 # Arquivos estáticos (CSS, JS, imagens)
 │   ├── style_form/CSS
 │   ├── style_homepage/CSS
+│   ├── style_admin/css 
 │   ├── imagens           
 │   └── js/
 │ 
