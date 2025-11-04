@@ -4,7 +4,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/deploy/apps/meuapp/meuapp.sock:;
+        proxy_pass http://unix:/home/deploy/apps/meuapp/meuapp.sock;
     }
 
     location /static/ {
