@@ -1,10 +1,10 @@
 server {
     listen 80;
-    server_name 72.61.40.141
+    server_name 72.61.40.141;
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/deploy/apps/meuapp/meuapp.sock;
+        proxy_pass http://unix:/home/deploy/apps/meuapp/meuapp.sock:;
     }
 
     location /static/ {
